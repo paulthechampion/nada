@@ -1,0 +1,63 @@
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
+.from-left {
+    transform: translateX(-50%);
+}
+
+.from-right {
+    transform: translateX(50%);
+}
+
+.from-left,
+.from-right{
+    transition: transform 1s ease-in;
+}
+
+.forAstro{
+    transform: translateX(50px);
+    transition: transform 1s ease-in;
+}
+
+.forAstro2{
+    transition: transform 1s ease-in;
+    transform: translateY(-20%);
+}
+
+.forAstro.appear{
+    transform: translateX(0);
+}
+
+.forAstro2.appear {
+    transform: translateY(0);
+}
+
+.from-left.appear, .from-right.appear {
+    transform: translateX(0%);
+}
+
+.serviceCheck.appear {
+    -webkit-animation:spin 4s  infinite;
+    -moz-animation:spin 4s  infinite;
+    animation:spin 4s  infinite;
+}
+
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}

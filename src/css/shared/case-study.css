@@ -1,0 +1,259 @@
+.case-div{
+    height:42em;
+}
+
+
+.case-first-div>h2{
+    font-family: sansationBold;
+    line-height:1em;
+}
+
+.case-first-div>table{
+    text-align: left;
+    width: 70em;
+    margin-top: 4em;
+
+}
+
+.case-first-div>table>tr{
+  line-height: 3em;
+}
+
+
+.case-first-div>table>tr>th{
+    color: #7E818A;
+}
+
+.phone-case-table>div>h3{
+    color: #7E818A;
+    margin-top:3em;
+    margin-bottom:1em;
+}
+
+.phone-case-table>div>p{
+    letter-spacing: .2em;
+    font-weight:bolder;
+}
+
+.case-first-div>table>tr>td{
+    padding-right: 9em;
+    letter-spacing: .1em;
+    font-weight:bolder;
+}
+
+.homeDiv>section>article{
+    padding:1em;
+}
+
+.homeDiv>section>article>p{
+    font-family:sans-serif;
+    letter-spacing: .1em;
+    word-spacing: .2em;
+    line-height: 2em;
+}
+
+.homeDiv>section>article>h1{
+    font-family: sansationItalic;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+.homeDiv>section>article>h3{
+    font-family: sansationBold;
+    font-size: 1.1em;
+    font-weight: 100;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.table-two-pic{
+    height: 6em;
+}
+.table-two{
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+.table-two>tr>td{
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+    line-height: 2em;
+    letter-spacing: .1em;
+    word-spacing: .3em;
+}
+
+.phone-case-table-two{
+    text-align:center;
+    margin-top:5em;
+    margin-bottom:5em;
+}
+
+.phone-case-table-two>div>img{
+    margin-top:3em;
+    margin-bottom:2em;
+}
+
+.phone-case-table-two>div:first-child>img{
+    margin-top: -3em;
+}
+
+.phone-case-table-two>div>h2{
+    margin-bottom:.5em;
+}
+
+.process-div{
+    text-align: center;
+}
+.tag-process-pic{
+    width: 340px;
+}
+.dunsin{
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+.table-three{
+    margin-top: 1em;
+    text-align: center;
+}
+.test-back{
+    background-image: url(../../img//fish.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sitemap{
+    width: 340px;
+    height: 500px;
+    margin-bottom: 3em;
+}
+
+
+.wire-frame-div>div{
+    text-align:center;
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+
+.wire-frame-pic{
+    width: 300px;
+}
+
+.final-design-div{
+    text-align: center;
+    padding-top: 3em;
+}
+
+.final-design-pic{
+    width: 300px;
+    margin-bottom: 2em;
+}
+
+.final-design-div>h1{
+    font-family: sansationItalic;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+
+
+.bank-div{
+    margin-top:3em;
+}
+
+.bank1{
+    width: 250px;
+    position: relative;
+    bottom:8em;
+    left:5em;
+    margin-bottom:-5em;
+}
+
+.bank2{
+    width: 220px;
+    height: 220px;
+}
+
+.sapayprocess{
+    margin-bottom: 5em;
+}
+
+
+
+.sapaylist{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 2em;
+    line-height:2em;
+    color: #FF3D00;
+}
+
+@media(min-width :1085px){
+    .case-div{
+        height:25em;
+    }
+    .homeDiv>section>article{
+        padding:3em;
+    }
+    .tag-process-pic{
+        width: 60em;
+    }
+    .sapaylist{
+        margin-left: 6em;
+    }
+    .sitemap{
+        width: 35em;
+        height: 50em;
+        margin-bottom: 3em;
+    }
+    .wire-frame-div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .wire-frame-pic{
+        width: 20em;
+    }
+    .final-design-pic{
+        width: 50em;
+        margin-bottom: 2em;
+    }
+    .wire-frame-div>div{
+        text-align:inherit;
+        margin: auto;
+        width: 30%;
+    }
+    .userFlow{
+        width: 40em;
+    }
+    .bank-div{
+        text-align: center;
+        margin-bottom: 17em;
+    }
+    .bank1{
+        width: 35em;
+        margin-bottom: 5em;
+        position: relative;
+        bottom:0;
+        left:0;
+        right: 10em;
+        top: 15em;
+        
+    }
+    
+    .bank2{
+        margin-left: 7em;
+        width: 30em;
+        height: 30em;
+        margin-bottom: 5em;
+    }
+    .phone-case-table-two>div:first-child>img{
+        margin-top: 0;
+    }
+    
+
+}

@@ -1,0 +1,668 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+}
+.testDiv{
+    background-color: white;
+    height: 50em;
+    padding-top: 3em;
+    
+    padding-left: 50px;
+    margin: auto;
+}
+
+.contact-div{
+    height: 40em;
+}
+
+.homeMemeDiv{
+    position: relative;
+    right:1.2em;
+    margin: 4em;
+}
+
+.homeMeme{
+    height: 40em;
+}
+
+.homeWrite{
+    width: 90%;
+    padding-left: 2em;
+    line-height: 1.5em;
+    padding-top: 3em;
+    color: black;
+    font-family: sansationNorm;
+}
+
+.homeWrite>h2{
+    font-family:sansationBold;
+    font-size: 2.5em;
+    line-height: 50px;
+    font-weight:bolder;
+}
+
+.homeWrite>p {
+    margin-bottom: 2.5em;
+}
+
+.about-me-h2{
+    margin-top: .5em;
+}
+
+.about-down-p{
+    margin-top: -2em;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.color-text{
+    color:#FF8A00;
+}
+
+.talk-btn {
+    outline: none;
+    border: none;
+    color : #FF8A00;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    margin-right: 2em;
+    text-decoration: none;
+    transition: .4s ease-in-out;
+}
+
+.talk-btn:hover {
+    
+    background-color: white;
+    border: 2px solid #FF8A00;
+}
+.contact-div{
+    background-color: white;
+    background-image: unset;
+}
+
+.contact-div-p{
+    color: black;
+    font-family: sansationBold;
+}
+
+.contactMemeDiv{
+    background-image:url(../../img//blackrec.jpg) ;
+}
+
+.arrow-up{
+    transform:rotate(45deg);
+}
+
+.portfolio-btn{
+    background-color: inherit;
+    outline: none;
+    border: none;
+    transition: .4s ease-in-out;
+}
+
+.portfolio-btn:hover {
+    color: #FF8A00;
+    cursor: pointer;
+}
+
+.checkout {
+    margin-top: 2em;
+}
+
+.checkout > a {
+    display: inline-block;
+    text-align: center;
+}
+
+.checkoutSpan{
+    margin-right: .5em;
+    position: relative;
+    bottom: 7px;
+}
+
+.servive-main-div {
+    height: 50em;
+    background-color:#FCDA69 ;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: sansationNorm;
+    width: 100%;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.servive-main-div > div:first-child {
+    width: 40%;
+    margin: auto;
+    margin-top: 0;
+}
+
+.servive-main-div > div:first-child > h1 {
+    font-family: sansationBold;
+    font-size: 50px;
+    margin-top: 2em;
+    margin-bottom: .5em;
+}
+
+.servive-main-div > div:first-child > img {
+    height: 32em;
+    width: 27em;
+} 
+
+.servive-main-div > div:last-child {
+    width: 40%;
+    margin: auto;
+    margin-top: 0;
+}
+
+.service-ul{
+    margin: auto;
+    list-style: none;
+    margin-top: 10em;
+    padding-right: 10em;
+    margin-left: -8em;
+}
+
+.service-ul > li{
+    margin: auto;
+    font-size: 30px;
+    border-top: 3px solid black;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.service-ul > li:last-child{
+    border-bottom: 3px solid black;
+}
+
+.skills-main-div {
+    padding-left: 8em;
+    padding-right: 8em;
+    font-family: sansationNorm;
+}
+
+.skills-main-div > h1 {
+    font-family: sansationBold;
+    font-size: 50px;
+    margin-top: 2em;
+}
+
+
+
+.loading-main {
+    width: 95%;
+    position: relative;
+    bottom:134px;
+}
+.w3-container  {
+    background-color: #029EE4;
+    height:3px;
+    width:1%;
+
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills-point-flex {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.skill-point {
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid #172A31;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 19em;   
+    position: relative;
+    bottom: 120px;
+    right: 20px;
+}
+
+.skill-point > div {
+    width: .8em;
+    height: .8em;
+    background-color: #00ff6a;
+    border-radius: 50%;
+    margin: auto;
+    position:relative;
+    top: 25%;
+}
+
+
+.skill-point:nth-child(2) > div {
+    background-color: #F2994A;
+    
+}
+
+.skill-point:nth-child(3) > div {
+    background-color: #FF6969;
+}
+
+.skill-point:last-child > div {
+    background-color: #DCA0A0;
+}
+
+
+.skill-words-div{ 
+    position: relative;
+    bottom: 250px;
+}
+
+
+.skill-words-div > div {
+    margin: auto;
+    text-align: center;
+    font-weight: bolder;
+}
+.skill-words-div > div:first-child > p{
+    margin-bottom: 12em;
+}
+
+.skill-words-div > div:nth-child(2) > p{
+    margin-bottom: 6em;
+}
+
+.skill-words-div > div:nth-child(3) > p{
+    margin-bottom: 10em;
+}
+
+.skill-words-div > div:last-child > p{
+    margin-bottom: 11em;
+}
+
+
+.skillsFlowerDiv {
+    margin-top: -10em;
+    margin-right: -125px;
+    display: block;
+    text-align: right;
+}
+
+.phoneHome {
+    text-align: center;
+    font-family: sansationNorm;
+}
+
+.phomeHomeImgDiv {
+    margin: auto;
+    text-align: center;
+    
+  display: flex;
+}
+
+.phomeHomeImgDiv > img {
+    text-align: center;
+    margin: auto;
+    width: 460px;
+    max-width: 100%;  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.phoneHome > h2 {
+    margin-top: -9em;
+    font-family: sansationBold;
+}
+
+.phoneHome > p {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.toggle-mini-div {
+    margin-top: -4px;
+    margin-left: 25px;
+    text-align: center;
+    border: 5px solid #172A31;
+    height: 39px;
+    width: 40px;
+    border-radius: 100%;
+    transition:  1s ease-in-,
+  }
+
+
+@media(max-width :360px){
+    .testDivprob{
+        height:55em;
+    }
+}
+
+@media(min-width :390px){
+    .homeMemeDiv{
+        position: relative;
+        right:0;
+    }
+
+
+}
+
+@media(max-width :700px){ 
+    .half-dark-moon {
+        margin: auto;
+        text-align: center;
+        width: 300px;
+        height: 150px;
+        display: block;
+        position: relative;
+        left: 0em;
+    }
+    .toggle-dark-light {
+        margin: auto;
+        height: 0px !important;
+        max-height: 0px !important;
+        width: 0px !important;
+        text-align: center;
+        color: black;
+        position: relative !important;
+        top:40px !important;
+        
+        left: -30px !important;
+        border-radius: 50%;
+    }
+
+    .toggle-main-div {
+        margin: auto;
+        border: 2px solid #46879D;
+        height: 25px !important;
+        width: 50px !important;
+        position: relative;
+        top:25%;
+        border-radius: 50px/50px;
+        padding: 0;
+        text-align: left;
+    }
+
+    .toggle-mini-div {
+        margin-top: -5px;
+        margin-left: 21px ;
+        text-align: center;
+        border: 5px solid #172A31;
+        height: 25px !important;
+        width: 25px !important;
+        border-radius: 100%;
+        transition:  1s ease-in-,
+    }
+
+    .dark-mood-img {
+        margin: auto;
+        text-align: center;
+        margin-top: 4px;
+        display: block;
+        height: 23px !important;
+    
+    }
+    .testDiv {
+        margin: auto;
+        padding: 0;
+        padding-top: 7em;
+        height: 36em;
+    }
+
+    
+    .servive-main-div {
+        display: block;
+        padding-left: 15px;
+        font-weight: bolder;
+    }
+    .servive-main-div > div:first-child {
+        width: 100%;
+    }
+    .servive-main-div > div:last-child {
+        width: 100%;
+    }
+    .phoneServiceFlex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .phoneServiceFlex >div:first-child {
+        width: 70%;
+        padding-top: 4em;
+    }
+
+    .phoneServiceFlex >div:first-child > h1 {
+        font-family: sansationBold;
+    }
+
+    .phoneServiceFlex >div:last-child {
+        width: 20%;
+    }
+
+    .serviceCheck {
+        width: 200px;
+    }
+    .service-ul {
+        margin: auto;
+        padding: 0;
+    }
+
+    .service-ul > li {
+        margin: auto;
+        font-size: 25px;
+    }
+    .service-ul > li:last-child {
+        border-bottom: none;
+    }
+
+    .skill-point {
+        left: 10px;
+    }
+
+    .skill-point:first-child {
+        position: relative;
+        top:0px;
+    }
+    
+    .skill-point:nth-child(2) {
+        position: relative;
+        top:0px;
+    }
+
+    .skills-main-div {
+        padding: 0;
+        margin-top: -3em;
+        padding-left: 15px;
+    }
+    .skills-main-div > h1 {
+        font-size: 35px;
+    }
+
+    .phoneSkillDiv > div {
+        margin: auto;
+        font-size: 15px;
+    }
+    .phoneSkillDiv > div:nth-child(2){
+        position: relative;
+        right: 25px;
+        top:6px;
+    }
+    .phoneSkillDiv > div > div {
+        margin-top: 6em;
+    }
+    .phoneSkillDiv > div:nth-child(2) > div:nth-child(3){
+        position: relative;
+        bottom:8px;
+    } 
+    .phoneSkillDiv > div:nth-child(2) > div:nth-child(4){
+        position: relative;
+        bottom:16px;
+    } 
+
+    .skill-point {
+        margin: 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    .skillsFlowerDiv {
+        text-align: center;
+        margin: auto;
+        margin-top: -20em;
+    }
+
+    .skillsFlower {
+
+        width: 450px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .Phoneloading {
+        height: 21em;
+        position: relative;
+        margin-top: 3em;
+        bottom: 400px;
+        left: 19px;
+    }
+    .w3-container  {
+        margin: auto;
+        background-color: #029EE4;
+        height:1%;
+        width:5px;
+    
+    }
+    .w3-button {
+        z-index: 1;position: relative;
+    }
+
+}
+
+
+@media(min-width :700px){
+    .testDiv{
+        display: flex;
+        flex-wrap: wrap;
+        height: 37em;
+        padding-bottom: 2em;
+        width: 100%;
+        overflow: hidden;
+    }
+    .homeWrite{
+        width: 22%;
+        padding: 0;
+        padding-top: 8em;
+        padding-left: 5em;
+    }
+    .homeMemeDiv{
+        margin: auto;
+        margin-top: 0;
+        padding-top: 0;
+        width: 40%;
+    }
+    .homeMemeSubDiv {
+        margin: auto;
+        text-align: right;
+        position: absolute;
+    }
+    .about-me-h2{
+        margin-top: 3em;
+    }
+
+}
+
+@media only screen and (max-width:990px ) and (min-width: 700px) { 
+    .testDiv {
+        padding-left: 0;
+    }
+
+    .homeWrite {
+        padding-left: 3em;
+    }
+
+    .homeMeme {
+        height: 35em;
+      }
+
+      .homeMemeDiv {
+        width: 30%;
+        padding-right: 1em;
+      }
+
+      .homeWrite {
+        padding-top: 4em;
+      }
+
+      .portfolio-btn {
+        margin-top: 3em;
+      }
+
+      .toggle-dark-light {
+        left: 200px !important;
+      }
+      .service-ul {
+        padding-right: 0em;
+        margin-left: 0;
+      }
+
+      .servive-main-div {
+        height: 54em;
+        padding-left: 0em;
+        padding-right: 0em;
+      }
+      .skills-main-div {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .card-img {
+        height: 15em !important;
+        width: 15em !important;
+        margin: auto;
+    }
+
+      
+}
+
+@media(max-width :390px){ 
+    .phoneHome > h2 {
+        margin-top: -7em;
+    }
+}
+
+@media(min-width :1336px){ 
+    .homeMemeSubDiv {
+        margin-left: 4em;
+    }
+
+}
+
+@media(min-width :1530px){ 
+    .homeMemeSubDiv {
+        margin-left: 7em;
+    }
+
+}
+
+@media(min-width :1642px){ 
+    .homeMemeSubDiv {
+        margin-left: 11em;
+    }
+
+}
+
+@media(min-width :1680px){ 
+    .homeMemeSubDiv {
+        margin-left: 15em;
+    }
+
+}
+
+
+@media(min-width :1700px){ 
+    .homeMemeSubDiv {
+        margin-left: 19em;
+    }
+
+}
+
