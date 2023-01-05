@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="footer-flex"  id='footers'>
                 <div className="footer-connect-div">
                     <ul>
-                        <li className='slide-in from-left'><span><img src={email} alt="email icon"/></span><a href='donpantee@gmail.com' className='linklink'>donpantee@gmail.com</a></li>
+                        <li className='slide-in from-left'><span><img src={email} alt="email icon"/></span><a href='mailto:donpantee@gmail.com' className='linklink'>donpantee@gmail.com</a></li>
                         <li className='slide-in from-left'><span><img src={linkedin} alt="linkedin icon"/></span><a href="https://linkedin.com/in/abdul-panti-b8030a1ab" className='linklink'>Linkedin</a></li>
                         <li className='slide-in from-left'><span><img src={location} alt="location icon"/></span><a>Lagos, Nigeria</a></li>
                     </ul>
