@@ -519,6 +519,7 @@ body {
         text-align: center;
         margin: auto;
         margin-top: -20em;
+        padding-left: 10px;
     }
 
     .skillsFlower {
@@ -643,12 +644,15 @@ body {
     .homeMemeSubDiv {
         margin-left: 4em;
     }
-
 }
 
 @media(min-width :1530px){ 
     .homeMemeSubDiv {
         margin-left: 7em;
+    }
+
+    .testDiv {
+        padding-left: 70px;
     }
 
 }
