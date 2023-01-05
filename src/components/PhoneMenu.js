@@ -50,9 +50,9 @@ export default function PhoneMenu() {
                     </a>
                      </div>
                     <div className="phoneLdiv"> <a href="/#home" className="phoneL"  onClick={()=>setShowMenu(!showMenu)}>home.</a></div>
-                    <div className="phoneLdiv"> <a href="/#work" className="phoneL"  onClick={()=>setShowMenu(!showMenu)}>services. </a></div>
-                    <div className="phoneLdiv"> <a href="/#about" className="phoneL"  onClick={()=>setShowMenu(!showMenu)}>skills.</a></div>
-                    <div className="phoneLdiv"> <a href="/#contact" className="phoneL"  onClick={()=>setShowMenu(!showMenu)}>projects.</a></div>
+                    <div className="phoneLdiv"> <a href="/#service" className="phoneL"  onClick={()=>setShowMenu(!showMenu)}>services. </a></div>
+                    <div className="phoneLdiv"> <a href="/#skills" className="phoneL"  onClick={()=>setShowMenu(!showMenu)}>skills.</a></div>
+                    <div className="phoneLdiv"> <a href="/#projects" className="phoneL"  onClick={()=>setShowMenu(!showMenu)}>projects.</a></div>
                     <div className="phoneLdiv"> <a href="/#footer" className="talk-btn talkDark letsTalkWhite talkPhone"  onClick={()=>setShowMenu(!showMenu)}>Let's talk</a></div>
                 </div>
             </nav>
