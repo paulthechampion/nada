@@ -349,6 +349,13 @@ body {
 }
 
 @media(max-width :700px){ 
+    .talk-btn {
+        font-size: 13px;
+    }
+
+    .portfolio-btn {
+        color: black;
+    }
     .half-dark-moon {
         margin: auto;
         text-align: center;
@@ -418,6 +425,7 @@ body {
     }
     .servive-main-div > div:first-child {
         width: 100%;
+        padding-right: 15px;
     }
     .servive-main-div > div:last-child {
         width: 100%;
@@ -446,6 +454,7 @@ body {
     .service-ul {
         margin: auto;
         padding: 0;
+        margin-right: 30px;
     }
 
     .service-ul > li {
@@ -523,7 +532,7 @@ body {
         position: relative;
         margin-top: 3em;
         bottom: 400px;
-        left: 19px;
+        left: 21px;
     }
     .w3-container  {
         margin: auto;
