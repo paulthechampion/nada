@@ -43,16 +43,17 @@ export default function PhoneMenu() {
             <nav className={navClasses} id="phoneMenuId">
                 <div className="subPM">
                     <div className="phoneLdiv firstNav">
-                    <a href="/#home" className="logo-link"> 
+                    <a href="/" className="logo-link"> 
                     
                         <img src={AA} alt="Abdul A" className="plogo"/>
                         <img src={bdul} alt="bdul" className="plogo"/>
                     </a>
                      </div>
                     <div className="phoneLdiv"> <a href="/#home" className="phoneL"  onClick={()=>setShowMenu(!showMenu)}>home.</a></div>
-                    <div className="phoneLdiv"> <a href="/#work" className="phoneL"  onClick={()=>setShowMenu(!showMenu)}>work. </a></div>
-                    <div className="phoneLdiv"> <a href="/#about" className="phoneL"  onClick={()=>setShowMenu(!showMenu)}>about me.</a></div>
-                    <div className="phoneLdiv"> <a href="/#contact" className="phoneL"  onClick={()=>setShowMenu(!showMenu)}>contact.</a></div>
+                    <div className="phoneLdiv"> <a href="/#work" className="phoneL"  onClick={()=>setShowMenu(!showMenu)}>services. </a></div>
+                    <div className="phoneLdiv"> <a href="/#about" className="phoneL"  onClick={()=>setShowMenu(!showMenu)}>skills.</a></div>
+                    <div className="phoneLdiv"> <a href="/#contact" className="phoneL"  onClick={()=>setShowMenu(!showMenu)}>projects.</a></div>
+                    <div className="phoneLdiv"> <a href="/#footer" className="talk-btn talkDark letsTalkWhite talkPhone"  onClick={()=>setShowMenu(!showMenu)}>Let's talk</a></div>
                 </div>
             </nav>
         

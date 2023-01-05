@@ -289,6 +289,10 @@ margin-bottom: 1em;
   text-decoration:none;
 }
 
+.talkPhone {
+  margin-right: 0;
+}
+
 @media(max-width :700px){ 
 .servive-main-div {
   overflow-x: hidden;
