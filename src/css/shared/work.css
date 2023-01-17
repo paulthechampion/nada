@@ -83,9 +83,15 @@
 .card-info > p {
     margin-top: 1em;
 }
-.card-info > span {
+.card-info > a {
     position: relative;
-    top:5em;
+    top:2em;
+    text-decoration: none;
+    color: white;
+}
+
+.card-info > a:hover {
+    color: #FF8A00;
 }
 
 .card-flip-toggle {

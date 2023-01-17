@@ -20,19 +20,36 @@ export default function WorksSec() {
     const isDesktopOrLaptop = useMediaQuery({
         query: '(min-width: 1085px)'
       })
-      const [projects, setProjects] = useState({name: "NADA Create", img: nadaPic, link: "https://nada-create.herokuapp.com/", github: "https://github.com/paulthechampion/nada-create", words:"Nada Create is an ongiong Ecommerce company which sells sportwears, especially that of soccer. This Application is being created using Node js, Express, Ejs for the view engine, Mongodb, Paystack for the Payment integration system and many more"})
+      const [projects, setProjects] = useState({name: "NADA Create", img: nadaPic, link: "https://nada-create.herokuapp.com/",words:"Nada is an e-commerce web app designed with the user in mind, featuring a sleek and intuitive interface that makes browsing and purchasing jerseys a seamless experience. The Web app utilizes bold imagery and easy-to-use filters to showcase products, while secure payment options and fast checkout ensure a stress-free shopping experience. Our web app is the perfect shopping companion for the modern consumer."})
 
 
       const projectsData = [ 
-        {name: "NADA Create", img: nadaPic, link: "https://nada-create.herokuapp.com/", github: "https://github.com/paulthechampion/nada-create", words:"Nada Create is an ongiong Ecommerce company which sells sportwears, especially that of soccer. This Application is being created using Node js, Express, Ejs for the view engine, Mongodb, Paystack for the Payment integration system and many more"},
-        {name: "Kreer", img: keer, link: "https://www.kreer.ng/",github : "", words:"Keer Ng is a company based in Nigeria that offers business development services"},
-        {name: "Davito Immigration Services", img: davito, link: "https://www.davitoservices.com",github : "https://github.com/paulthechampion/Davito-services", words:"A Canadian Immigration company"},
-        {name: "Read Rubixx", img: ruixPic, link: "https://rubixx.herokuapp.com/",github : "https://github.com/paulthechampion/rubix", words:"Rubixx is a Full-stack online book library, it saves authors and their books. Also enables users to read books. This as created using the MERN stack as well as PDF.js library to read the books"},  
-        {name: "Emaily", img: surveyPic, link: "https://email-dev-list.herokuapp.com",github : "https://github.com/paulthechampion/email-list", words:"Emaily is a survey dispatch service, it enables the users to send surveys to a series of emails and receive feedback. This app is still in the test phase, it was created using Mongodb, Express Js, React Js, Redux, Redux Forms, Stripe for payment integration, SendGrid,Node js and many more"}, 
-        {name: "Clown Chat", img: myPic1, link: "https://clownchat.herokuapp.com/",github : "https://github.com/paulthechampion/ClownChat", words:"A comical messaging app, created using Express, Node js, Ejs view engine and Socket.io"},
-        {name: "Todo App", img: todoPic, link: "https://champs-todo.herokuapp.com",github : "https://github.com/paulthechampion/todoApp", words:"A Full-stack Todo app, saves Todo tasks and arranges them in a tabular format"}
+        {name: isDesktopOrLaptop ? "Nada Create": "Nada", img: nadaPic, link: "https://nada-create.herokuapp.com/", words:"Our e-commerce app is designed with the user in mind, featuring a sleek and intuitive interface that makes browsing and purchasing jerseys a seamless experience. The app utilizes bold imagery and easy-to-use filters to showcase products, while secure payment options and fast checkout ensure a stress-free shopping experience. With push notifications for promotions and personalized recommendations, our app is the perfect shopping companion for the modern consumer."},
+        {name: "Tag Comics", img: comic, caseLink: "/tag-case", words:"Our comic app offers a sleek, user-friendly interface for avid readers to easily discover and access a vast library of their favorite comics. With intuitive navigation and personalized recommendations, readers can immerse themselves in their favorite stories and explore new ones with ease."},
+        {name: isDesktopOrLaptop? "Davito Services": "Davito", img: davito, link: "https://www.davitoservices.com", words:"Davito service is a Canadian Immigration company, this website was created with the initiative of being user friendly and also to allow for the smooth flow and understanding of information from the business to the user."},
+        {name: "Wee'Count", img: weed, caseLink: "/wee'count", words:"A user-friendly and visually appealing interface that makes it easy for users to track their sober days. The app features a clean and modern design, with easy-to-use navigation and clear visual cues to guide users through the various features. The main focus of the app would be a calendar feature, where users can track their sober days and set reminders to stay on track."},
+        {name: "Clown Chat", img: myPic1, link: "https://clownchat.herokuapp.com/", words:"Introducing our new clown chat app, designed for endless entertainment and fun. With colorful and playful graphics, users can interact enjoy endless conversations, jokes and stories. Perfect for both kids and adults, the clown chat app is guaranteed to bring joy and laughter to your day."},
+        {name: "Sapay", img: sapa, caseLink: "/sapay", words:"Effortlessly manage your transactions with our sleek and user-friendly app. Intuitive design allows for seamless navigation and secure payment processing. Keep track of your finances in one convenient location"},
+        {name: "Rubix", img: ruixPic, link: "https://rubixx.herokuapp.com/", words:"Rubixxx is a simple library app that allows users to access and manage their library account from their mobile device or computer. With Rubixxx, users can search for other materials,  and access other library services. Some features of Rubixxx may include recommendations based on users' reading history, access to digital resources such as online databases and e-magazines, and integration with social media platforms that can be uploaded by users"},  
+        {name: "Emaily", img: surveyPic, link: "https://email-dev-list.herokuapp.com", words:"Emaily is a survey dispatch service, it enables the users to send surveys to a series of emails and receive feedback."}, 
+        {name: "Todo App", img: todoPic, link: "https://champs-todo.herokuapp.com", words:"This to-do app is a sleek and user-friendly tool to help you stay organized and on top of your tasks. With a clean and minimalistic design, it's easy to add, edit and prioritize your to-dos. Whether you're a busy professional or a student, our app will make sure you never miss a deadline again"}
     ]
 
+    // function activeClass(event) {
+    //     if(activeH2) {
+    //         const newActiveH2 = event.target
+    //         if(darkMode) {
+    //             activeH2.style.color="#D07D01"
+    //             newActiveH2.style.color="white"
+                
+    //         } else {
+    //             activeH2.style.color="white"
+    //             newActiveH2.style.color="#D07D01"
+    //         }
+    //         setActiveH2(newActiveH2)
+    //     }
+    //     return
+    // }
     function flipProjects(projects) {
         document.getElementById("card").classList.toggle("card-flip-toggle")
         setProjects(projects)
@@ -46,7 +63,7 @@ export default function WorksSec() {
             <div className='projects-div fade-in' id='projects-div'>
                 <div className='projectsFlex flex'>
                     {projectsData.map(project=>
-                        <div onClick={()=>{flipProjects(project)}} className={projects.name === project.name ? "brown needHoverWhite" : "needHoverWhite"} id={projects.name === project.name ? "selectedProject" : null}>
+                        <div onClick={()=>{flipProjects(project)}} className={projects.name === project.name ? "brown needHoverWhite need-brown p" : "needHoverWhite need-brown p"} id={projects.name === project.name ? "selectedProject" : null}>
                             {project.name}<i className="fas fa-arrow-up arrow-up workArrow"></i>
                         </div>   
                     )}
@@ -57,9 +74,9 @@ export default function WorksSec() {
                         <img src={projects.img} alt="project pic" className='card-img'/>
                     </div>
                     <div className='card-info slide-in from-right'>
-                        <h2>{projects.name}</h2>
-                        <p>{projects.words}</p>
-                        {projects.caseLink? <span>View case study <img src={vector} className="vector" alt="vector"/></span>:<span>View Live App <img src={vector} className="vector" alt="vector"/></span>}
+                        <h2 className='need-brown p'>{projects.name}</h2>
+                        <p className='need-brown p'>{projects.words}</p>
+                        {projects.caseLink? <a  href={projects.caseLink} target="_blank" className='need-brown p needHoverWhite'>View case study <img src={vector} className="vector" alt="vector"/></a>:<a className='need-brown p needHoverWhite' href={projects.link} target="_blank">View Live App <img src={vector} className="vector" alt="vector"/></a>}
                     </div>
                 </div>
             <div className='project-search-div'>

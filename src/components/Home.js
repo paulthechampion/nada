@@ -61,7 +61,6 @@ export default function Home() {
             header.style.borderBottom = "none"
             root.style.backgroundColor = "white"
             projectsDiv.style.backgroundColor = "rgb(0, 0, 0,0.7)"
-            selectedProject.style.color = "#FF8A00"
             phoneMenuTag.style.color = "black"
             phoneMenu.style.backgroundImage = "url(./projectBack.png)"
 
@@ -105,11 +104,16 @@ export default function Home() {
 
             for(var i = 0; i < needBrown.length; i++) {
                 needBrown[i].style.color = "black"
+                if(needBrown[i].classList.contains("p")) {
+                    needBrown[i].style.color = "white"
+                }
             }
             
             
             mainDiv.style.border = "5px solid #172A31";
-            
+            if(selectedProject) {
+                selectedProject.style.color = "#FF8A00"
+            }
         }else {
             console.log(lightBlack)
             home.style.backgroundColor = "#172A31"
@@ -121,7 +125,6 @@ export default function Home() {
             header.style.borderBottom = "2px solid #F2994A"
             root.style.backgroundColor = "#172A31"
             projectsDiv.style.backgroundColor = "rgb(0, 0, 0,0.7)"
-            selectedProject.style.color = "white"
             phoneMenuTag.style.color = "#F2994A"
             phoneMenu.style.backgroundImage = "url(./darkProject.png)"
 
@@ -164,6 +167,9 @@ export default function Home() {
             }
 
             mainDiv.style.border = "5px solid #F2994A";
+            if(selectedProject){
+                selectedProject.style.color = "white"
+            }
         }
         setDarkMode(!darkMode)
     }

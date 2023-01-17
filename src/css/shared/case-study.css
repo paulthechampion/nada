@@ -1,5 +1,11 @@
 .case-div{
     height:42em;
+    background-image: url("../../img/blackrec.jpg");
+    color: white;
+}
+
+.case-div * {
+    color: white;
 }
 
 
