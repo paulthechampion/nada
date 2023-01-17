@@ -201,7 +201,7 @@ export default function Home() {
                             <a href = "https://dribbble.com/ricedean" className="no-line-link" target="_blank">
                                 <img src={dribble} alt="connect-img" className="connect-img"/>
                             </a> 
-                            <a href = "https://linkedin.com/in/abdul-panti-b8030a1ab" className="no-line-link" target="_blank">
+                            <a href = "https://linkedin.com/in/abdul-auwal" className="no-line-link" target="_blank">
                                 <img src={linkedin} alt="connect-img" className="connect-img"/>
                             </a> 
                             <a href = "https://twitter.com/pantinextdoor" className="no-line-link" target="_blank">
@@ -263,7 +263,7 @@ export default function Home() {
                                 <a href = "https://dribbble.com/ricedean" className="no-line-link" target="_blank">
                                     <img src={dribble} alt="connect-img" className="connect-img"/>
                                 </a> 
-                                <a href = "https://linkedin.com/in/abdul-panti-b8030a1ab" className="no-line-link" target="_blank">
+                                <a href = "https://linkedin.com/in/abdul-auwal" className="no-line-link" target="_blank">
                                     <img src={linkedin} alt="connect-img" className="connect-img"/>
                                 </a> 
                                 <a href = "https://twitter.com/pantinextdoor" className="no-line-link" target="_blank">
