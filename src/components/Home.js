@@ -22,6 +22,7 @@ import darkPhoneFlower from "../img/darkPhoneFlower.png"
 
 export default function Home() {
     const [darkMode, setDarkMode] = useState(false)
+    const [activeH2,setActiveH2] = useState(null)
 
     const isDesktopOrLaptop = useMediaQuery({
         query: '(min-width: 700px)'
@@ -112,10 +113,10 @@ export default function Home() {
             
             mainDiv.style.border = "5px solid #172A31";
             if(selectedProject) {
+                setActiveH2(selectedProject)
                 selectedProject.style.color = "#FF8A00"
             }
         }else {
-            console.log(lightBlack)
             home.style.backgroundColor = "#172A31"
             skills.style.backgroundColor = "#172A31"
             service.style.backgroundColor = "#172A31"
@@ -168,6 +169,7 @@ export default function Home() {
 
             mainDiv.style.border = "5px solid #F2994A";
             if(selectedProject){
+                setActiveH2(selectedProject)
                 selectedProject.style.color = "white"
             }
         }
@@ -193,7 +195,7 @@ export default function Home() {
                                 Let's Talk
                             </a>
                             <button className='portfolio-btn lightBlack needHoverWhite' onClick={()=>{window.location="/#projects"}}>
-                                Portfolio <i class="fas fa-arrow-up arrow-up"></i>
+                                Portfolio <i className="fas fa-arrow-up arrow-up"></i>
                             </button>
 
                             <div className='checkout'>
@@ -278,7 +280,7 @@ export default function Home() {
             </div>
             <Service image={darkMode ? darkCheck : check} />
             <Skills image={darkMode ? darkFlower : skillFlower} phoneImage={darkMode ? darkPhoneFlower: phoneFlower}/>
-            <WorkSec darkMode={darkMode}/>
+            <WorkSec darkMode={darkMode} activeH2={activeH2 ? activeH2 : null}/>
             {/* <AboutContact/> */}
         </div>
     )

@@ -4,7 +4,7 @@ import weed from "../img/tch.png"
 import sapa from "../img/Group 86.png"
 import vector from "../img/vector.png"
 import { useMediaQuery } from 'react-responsive'
-import davito from "../img/immigration.jpg"
+import davito from "../img/canada-flag.jpeg"
 import keer from "../img/kreer.jpg"
 import nadaPic from "../img/nada-nada.jpg"
 import ruixPic from "../img/rubixx.png"
@@ -16,12 +16,12 @@ import search from "../img/image 2.png"
 
 
 
-export default function WorksSec() {
+export default function WorksSec(props) {
     const isDesktopOrLaptop = useMediaQuery({
         query: '(min-width: 1085px)'
       })
-      const [projects, setProjects] = useState({name: "NADA Create", img: nadaPic, link: "https://nada-create.herokuapp.com/",words:"Nada is an e-commerce web app designed with the user in mind, featuring a sleek and intuitive interface that makes browsing and purchasing jerseys a seamless experience. The Web app utilizes bold imagery and easy-to-use filters to showcase products, while secure payment options and fast checkout ensure a stress-free shopping experience. Our web app is the perfect shopping companion for the modern consumer."})
-
+      const [projects, setProjects] = useState({name: isDesktopOrLaptop ? "Nada Create": "Nada", img: nadaPic, link: "https://nada-create.herokuapp.com/",words:"Nada is an e-commerce web app designed with the user in mind, featuring a sleek and intuitive interface that makes browsing and purchasing jerseys a seamless experience. The Web app utilizes bold imagery and easy-to-use filters to showcase products, while secure payment options and fast checkout ensure a stress-free shopping experience. Our web app is the perfect shopping companion for the modern consumer."})
+      const [oldActiveH2, setOldActiveH2] = useState(null)
 
       const projectsData = [ 
         {name: isDesktopOrLaptop ? "Nada Create": "Nada", img: nadaPic, link: "https://nada-create.herokuapp.com/", words:"Our e-commerce app is designed with the user in mind, featuring a sleek and intuitive interface that makes browsing and purchasing jerseys a seamless experience. The app utilizes bold imagery and easy-to-use filters to showcase products, while secure payment options and fast checkout ensure a stress-free shopping experience. With push notifications for promotions and personalized recommendations, our app is the perfect shopping companion for the modern consumer."},
@@ -50,11 +50,47 @@ export default function WorksSec() {
     //     }
     //     return
     // }
-    function flipProjects(projects) {
+    function flipProjects(event,projects) {
+        activeClass(event)
         document.getElementById("card").classList.toggle("card-flip-toggle")
         setProjects(projects)
         window.location.href = "/#card"
     }
+    
+    
+    function activeClass(event) {
+        if(props.activeH2) {
+            const newActiveH2 = event.target
+            const propsH2 = props.activeH2
+            if(!oldActiveH2) {
+                console.log("here dummt")
+                if(props.darkMode) {
+                    propsH2.style.color="#D07D01"
+                    newActiveH2.style.color="white"
+                    
+                } else {
+                    propsH2.style.color="white"
+                    newActiveH2.style.color="#D07D01"
+                }
+                setOldActiveH2(newActiveH2)
+            }
+            console.log("old",propsH2, "new", newActiveH2)
+            if(oldActiveH2) {
+                if(props.darkMode) {
+                    console.log(props.darkMode)
+                    oldActiveH2.style.color="#F2994A"
+                    newActiveH2.style.color="white"
+                    
+                } else {
+                    oldActiveH2.style.color="white"
+                    newActiveH2.style.color="#F2994A"
+                }
+                setOldActiveH2(newActiveH2)
+            }
+        }
+        return
+    }
+    
     return (
         <div id="projects" className='projects-main-div lightBlack'>
             
@@ -63,7 +99,7 @@ export default function WorksSec() {
             <div className='projects-div fade-in' id='projects-div'>
                 <div className='projectsFlex flex'>
                     {projectsData.map(project=>
-                        <div onClick={()=>{flipProjects(project)}} className={projects.name === project.name ? "brown needHoverWhite need-brown p" : "needHoverWhite need-brown p"} id={projects.name === project.name ? "selectedProject" : null}>
+                        <div key={project.name} onClick={(event)=>{flipProjects(event,project)}} className={projects.name === project.name ? "brown needHoverWhite need-brown p" : "needHoverWhite need-brown p"} id={projects.name === project.name ? "selectedProject" : null}>
                             {project.name}<i className="fas fa-arrow-up arrow-up workArrow"></i>
                         </div>   
                     )}
